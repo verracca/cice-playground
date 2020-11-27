@@ -18,17 +18,17 @@ export class ElectricEngine {
 }
 
 export class GasolineCar {
-  engine = new GasolineEngine()
+  engine = new GasolineEngine();
 
   move() {
-    return this.engine.accelerate()
+    return this.engine.accelerate();
   }
 }
 
 export class ElectricCar {
-  engine = new ElectricEngine()
+  engine = new ElectricEngine();
 
   move() {
-    return this.engine.accelerate()
+    return this.engine.accelerate();
   }
 }

@@ -1,1 +1,3 @@
-alert("Maria Veronica Racca");
+export function alert() {
+  window.alert("Maria Veronica Racca");
+}

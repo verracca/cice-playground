@@ -1,8 +1,8 @@
-@import './reset.css';
-@import './theme.css';
-@import './header.css';
-@import './button.css';
-@import './categories.css';
+@import "./reset.css";
+@import "./theme.css";
+@import "./header.css";
+@import "./button.css";
+@import "./categories.css";
 
 body {
   font-family: var(--body-font);

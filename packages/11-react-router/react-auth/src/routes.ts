@@ -1,5 +1,5 @@
 export const routes = {
-  login: '/login',
-  protected: '/protected',
-  home: '/home'
-}
+  login: "/login",
+  protected: "/protected",
+  home: "/home"
+};

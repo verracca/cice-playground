@@ -1,14 +1,14 @@
-import { Carousel } from './carousel.js'
+import { Carousel } from "./carousel.js";
 
 async function getComicUrl(id) {
   const response = await fetch(
     `https://cors-anywhere.herokuapp.com/https://xkcd.com/${id + 600}/info.0.json`,
     {
-      method: 'GET'
+      method: "GET"
     }
-  )
-  const comic = await response.json()
-  return comic.img
+  );
+  const comic = await response.json();
+  return comic.img;
 }
 
-new Carousel().init().onNext(id => getComicUrl(id))
+new Carousel().init().onNext(id => getComicUrl(id));

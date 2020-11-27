@@ -1,4 +1,3 @@
-function getTime() {
-    console.log(new Date)
+export function getTime() {
+  console.log(new Date());
 }
-

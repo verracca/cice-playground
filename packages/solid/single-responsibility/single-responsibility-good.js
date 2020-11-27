@@ -3,13 +3,13 @@
 // Good 👍
 export class Tire {
   needsChange() {
-    return false
+    return false;
   }
 }
 
 export class FuelTank {
   isEmpty() {
-    return false
+    return false;
   }
 }
 
@@ -22,26 +22,26 @@ export class Brakes {
 }
 
 export class Car {
-  brakes = new Brakes()
-  engine = new Engine()
-  tires = [new Tire(), new Tire(), new Tire(), new Tire()]
-  fuelTank = new FuelTank()
+  brakes = new Brakes();
+  engine = new Engine();
+  tires = [new Tire(), new Tire(), new Tire(), new Tire()];
+  fuelTank = new FuelTank();
 
   move() {
-    this.engine.accelerate()
+    this.engine.accelerate();
   }
 
   stop() {
-    this.brakes.brake()
+    this.brakes.brake();
   }
 
   tiresNeedToBeChanged() {
-    return this.tires.every(tire => !tire.needsChange())
+    return this.tires.every(tire => !tire.needsChange());
   }
 
   shouldRefuel() {
     if (this.fuelTank.isEmpty()) {
-      return 'refuel'
+      return "refuel";
     }
   }
 }

@@ -19,23 +19,23 @@ export class ElectricEngine {
 
 export class Car {
   constructor(engine) {
-    this.engine = engine
+    this.engine = engine;
   }
 
   move() {
-    return this.engine.accelerate()
+    return this.engine.accelerate();
   }
 }
 
 export class CarFactory {
   static build(type) {
     switch (type) {
-      case 'electric':
-        return new Car(new ElectricEngine())
-      case 'gasoline':
-        return new Car(new GasolineEngine())
+      case "electric":
+        return new Car(new ElectricEngine());
+      case "gasoline":
+        return new Car(new GasolineEngine());
       default:
-        throw new Error(`Can't convert type ${type} to car`)
+        throw new Error(`Can't convert type ${type} to car`);
     }
   }
 }

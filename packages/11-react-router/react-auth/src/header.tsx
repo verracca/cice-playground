@@ -1,6 +1,6 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { routes } from './routes'
+import React from "react";
+import { Link } from "react-router-dom";
+import { routes } from "./routes";
 
 export const Header: React.FC = () => {
   return (
@@ -9,5 +9,5 @@ export const Header: React.FC = () => {
       <Link to={routes.login}>Login</Link>
       <Link to={routes.protected}>Protected</Link>
     </nav>
-  )
-}
+  );
+};

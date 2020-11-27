@@ -1,7 +1,4 @@
-var value = prompt("Elige A, B o C y te mostrare el archivo correspondiente");
-
-(async function () {
-  const module = await import(`./${value}.js`)
-  console.warn(module.value())
-})()
-
+export async function loadJavaScript() {
+  var value = prompt("Choose a, b o c and I show you the file");
+  await import(value + ".js");
+}

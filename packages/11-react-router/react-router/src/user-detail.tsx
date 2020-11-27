@@ -1,11 +1,11 @@
-import React from 'react'
-import { Route, Switch, useHistory, useParams, useRouteMatch } from 'react-router-dom'
-import { UserDetailTasks } from './user-detail-tasks'
+import React from "react";
+import { Route, Switch, useHistory, useParams, useRouteMatch } from "react-router-dom";
+import { UserDetailTasks } from "./user-detail-tasks";
 
 export const UserDetail: React.FC = () => {
-  const { name } = useParams()
-  const history = useHistory()
-  const { url, path } = useRouteMatch()
+  const { name } = useParams();
+  const history = useHistory();
+  const { url, path } = useRouteMatch();
   return (
     <>
       <h1>User {name}</h1>
@@ -19,5 +19,5 @@ export const UserDetail: React.FC = () => {
         </Route>
       </Switch>
     </>
-  )
-}
+  );
+};

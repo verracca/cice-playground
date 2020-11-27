@@ -1,14 +1,14 @@
-import { Car } from './car'
+import { Car } from "./car";
 
-describe('Car', () => {
-  it('should log when it moves', () => {
+describe("Car", () => {
+  it("should log when it moves", () => {
     const fakeLogger = {
       log: jest.fn()
-    }
-    const car = new Car(fakeLogger)
+    };
+    const car = new Car(fakeLogger);
 
-    car.move()
+    car.move();
 
-    expect(fakeLogger.log).toHaveBeenCalledWith('moved')
-  })
-})
+    expect(fakeLogger.log).toHaveBeenCalledWith("moved");
+  });
+});

@@ -1,9 +1,9 @@
-import { Permission } from './permission'
+import { Permission } from "./permission";
 
 export class PermissionManager {
-  permissions: Permission[] = []
+  permissions: Permission[] = [];
 
   can(requiredPermissions: Permission[]): boolean {
-    return requiredPermissions.every(x => this.permissions.includes(x))
+    return requiredPermissions.every(x => this.permissions.includes(x));
   }
 }

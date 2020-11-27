@@ -1,3 +1,3 @@
-import { Carousel } from './carousel.js'
+import { Carousel } from "./carousel.js";
 
-new Carousel().init()
+new Carousel().init();

@@ -16,6 +16,6 @@ export class ElectricCar {
   charge() {}
 
   refuel() {
-    throw new Error('Electric cars cant be refueled')
+    throw new Error("Electric cars cant be refueled");
   }
 }

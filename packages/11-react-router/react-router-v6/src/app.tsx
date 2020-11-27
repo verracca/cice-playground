@@ -1,9 +1,9 @@
-import React, { Suspense, lazy } from 'react'
-import './app.css'
-import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom'
-import { Header } from './header'
+import React, { Suspense, lazy } from "react";
+import "./app.css";
+import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
+import { Header } from "./header";
 
-const UserDetail = lazy(() => import('./user-detail-page'))
+const UserDetail = lazy(() => import("./user-detail-page"));
 
 export const App: React.FC = () => {
   return (
@@ -17,7 +17,7 @@ export const App: React.FC = () => {
 
           <Route path="/users">
             <h1>Users</h1>
-            {['pepito', 'menganito', 'fulanito'].map(name => (
+            {["pepito", "menganito", "fulanito"].map(name => (
               <Link to={name} key={name}>
                 {name}
               </Link>
@@ -30,5 +30,5 @@ export const App: React.FC = () => {
         </Routes>
       </Suspense>
     </Router>
-  )
-}
+  );
+};

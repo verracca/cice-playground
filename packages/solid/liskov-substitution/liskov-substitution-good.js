@@ -16,9 +16,9 @@ export class BrokenCar extends Car {}
 export class ElectricCar extends WorkingCar {}
 
 export function race() {
-  const electricCar = new ElectricCar()
+  const electricCar = new ElectricCar();
 
-  const cars = [electricCar]
+  const cars = [electricCar];
 
-  return cars.map(car => car.move())
+  return cars.map(car => car.move());
 }
