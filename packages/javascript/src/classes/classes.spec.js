@@ -32,24 +32,47 @@ class ChildClass extends Class {
 >>>>>>> f770a2b236a5772aaca186083e20c8c5614cff75:packages/javascript/src/classes/classes.spec.js
   }
 
+  childMethod() {
+    return super.method()
+  }
+
   method() {
     return this.value + 1;
   }
 }
 
+<<<<<<< HEAD
 class NewClasses {
   #privateValue = 42;
   value = 42;
 
   static property = "hi";
+=======
+class GrandChild extends ChildClass {}
+
+class NewClasses {
+  static property = 'hi'
+>>>>>>> 2850556c7a8e66c60f09fad74694b53befc98165
+
+  value = 42
+  #privateValue = 42
 
   getPrivateValue() {
     return this.#privateValue;
   }
 
   boundFunction = () => {
+<<<<<<< HEAD
     return this.#privateValue;
   };
+=======
+    return this.#privateValue
+  }
+
+  #privateMethod() {
+    return 42
+  }
+>>>>>>> 2850556c7a8e66c60f09fad74694b53befc98165
 }
 
 describe("Class", () => {
@@ -75,6 +98,7 @@ describe("Class", () => {
     expect(actual).toBe("hi");
   });
 
+<<<<<<< HEAD
   describe("new class proposals", () => {
     it("should support field declarations (Stage 3)", () => {
       const c = new NewClasses();
@@ -99,3 +123,27 @@ describe("Class", () => {
     });
   });
 });
+=======
+  it('should support field declarations (Stage 3)', () => {
+    const c = new NewClasses()
+
+    const actual = c.value
+
+    expect(actual).toBe(42)
+  })
+
+  it('should support static field declarations (Stage 3)', () => {
+    const actual = NewClasses.property
+
+    expect(actual).toBe('hi')
+  })
+
+  it('should support private fields and methods (Stage 3)', () => {
+    const c = new NewClasses()
+
+    const actual = c.getPrivateValue()
+
+    expect(actual).toBe(42)
+  })
+})
+>>>>>>> 2850556c7a8e66c60f09fad74694b53befc98165
