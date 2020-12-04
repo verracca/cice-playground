@@ -1,12 +1,20 @@
 class Class {
+<<<<<<< HEAD:packages/javascript/src/classes/classes.spec.ts
   value: number;
 
+=======
+>>>>>>> f770a2b236a5772aaca186083e20c8c5614cff75:packages/javascript/src/classes/classes.spec.js
   static hello() {
     return "hi";
   }
 
+<<<<<<< HEAD:packages/javascript/src/classes/classes.spec.ts
   constructor(value: number) {
     this.value = value;
+=======
+  constructor(value) {
+    this.value = value
+>>>>>>> f770a2b236a5772aaca186083e20c8c5614cff75:packages/javascript/src/classes/classes.spec.js
   }
 
   method() {
@@ -15,8 +23,13 @@ class Class {
 }
 
 class ChildClass extends Class {
+<<<<<<< HEAD:packages/javascript/src/classes/classes.spec.ts
   constructor(value: number) {
     super(value);
+=======
+  constructor(value) {
+    super(value)
+>>>>>>> f770a2b236a5772aaca186083e20c8c5614cff75:packages/javascript/src/classes/classes.spec.js
   }
 
   method() {
