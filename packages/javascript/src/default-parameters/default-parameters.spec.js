@@ -12,14 +12,22 @@ function defaultParametersWithObject(obj = { foo: 1, bar: 2 }) {
   return obj.foo + obj.bar
 }
 
-function defaultParametersWithDestructuredObject({ foo = 2, bar = 'qux' }) {
+function defaultParametersWithDestructuredObject(
+  { foo = 2, bar = 'qux' } = { foo: 1, bar: 'baz' }
+) {
   return { foo, bar }
 >>>>>>> f770a2b236a5772aaca186083e20c8c5614cff75:packages/javascript/src/default-parameters/default-parameters.spec.js
 }
 
+<<<<<<< HEAD
 describe("add", () => {
   it("should add", () => {
     const actual = add(1, 2);
+=======
+describe('default parameters', () => {
+  it('should be able to use regular parameters', () => {
+    const actual = add(1, 2)
+>>>>>>> 853834dd92ecab6e11b9e5c5b0b5e6fba8a06417
 
     expect(actual).toBe(3);
   });

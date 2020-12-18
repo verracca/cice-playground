@@ -1,6 +1,20 @@
+<<<<<<< HEAD:packages/javascript/src/map-and-set/map-and-set.spec.js
 describe("map", () => {
   it("should set a value with key foo and value bar", () => {
     const map = new Map();
+=======
+describe('map', () => {
+  it('should store values in key and value object', () => {
+    const map = {}
+
+    map.foo = 'bar'
+
+    expect(map).toEqual({ foo: 'bar' })
+  })
+
+  it('should set a value with key foo and value bar', () => {
+    const map = new Map()
+>>>>>>> 853834dd92ecab6e11b9e5c5b0b5e6fba8a06417:packages/javascript/src/map/map.spec.js
 
     map.set("foo", "bar");
 
@@ -18,6 +32,7 @@ describe("map", () => {
     map.set("foo", "bar");
     const actual = map.get("foo");
 
+<<<<<<< HEAD:packages/javascript/src/map-and-set/map-and-set.spec.js
     actual?.anchor("s");
     if (actual !== undefined) {
       actual.anchor("s");
@@ -25,6 +40,10 @@ describe("map", () => {
 
     expect(actual).toBe("bar");
   });
+=======
+    expect(actual).toBe('bar')
+  })
+>>>>>>> 853834dd92ecab6e11b9e5c5b0b5e6fba8a06417:packages/javascript/src/map/map.spec.js
 
   it("should tell me the size", () => {
     const map = new Map();
@@ -107,8 +126,13 @@ describe("map", () => {
     map.set("bar", "baz");
     const actual = [];
 
+<<<<<<< HEAD:packages/javascript/src/map-and-set/map-and-set.spec.js
     for (let item of map) {
       actual.push(item);
+=======
+    for (const item of map) {
+      actual.push(item)
+>>>>>>> 853834dd92ecab6e11b9e5c5b0b5e6fba8a06417:packages/javascript/src/map/map.spec.js
     }
 
     expect(actual).toEqual([
