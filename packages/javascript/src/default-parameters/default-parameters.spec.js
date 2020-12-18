@@ -27,7 +27,11 @@ describe("add", () => {
 describe('default parameters', () => {
   it('should be able to use regular parameters', () => {
     const actual = add(1, 2)
+<<<<<<< HEAD
 >>>>>>> 853834dd92ecab6e11b9e5c5b0b5e6fba8a06417
+=======
+>>>>>>> 2850556c7a8e66c60f09fad74694b53befc98165
+>>>>>>> e33161966fc853882117b15069a83ac8be34dfe1
 
     expect(actual).toBe(3);
   });

@@ -22,7 +22,11 @@ describe("conditionals", () => {
     expect(actual).toBe('baz')
   })
 
+<<<<<<< HEAD
 >>>>>>> 853834dd92ecab6e11b9e5c5b0b5e6fba8a06417
+=======
+>>>>>>> 2850556c7a8e66c60f09fad74694b53befc98165
+>>>>>>> e33161966fc853882117b15069a83ac8be34dfe1
   it('if else', () => {
     const value = true
 >>>>>>> f770a2b236a5772aaca186083e20c8c5614cff75

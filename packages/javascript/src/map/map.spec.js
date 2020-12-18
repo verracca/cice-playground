@@ -14,7 +14,11 @@ describe('map', () => {
 
   it('should set a value with key foo and value bar', () => {
     const map = new Map()
+<<<<<<< HEAD
 >>>>>>> 853834dd92ecab6e11b9e5c5b0b5e6fba8a06417:packages/javascript/src/map/map.spec.js
+=======
+>>>>>>> b01f34bca04bfb37b9739dd70278bcb063579dd1:packages/javascript/src/map/map.spec.js
+>>>>>>> e33161966fc853882117b15069a83ac8be34dfe1
 
     map.set("foo", "bar");
 
@@ -43,7 +47,11 @@ describe('map', () => {
 =======
     expect(actual).toBe('bar')
   })
+<<<<<<< HEAD
 >>>>>>> 853834dd92ecab6e11b9e5c5b0b5e6fba8a06417:packages/javascript/src/map/map.spec.js
+=======
+>>>>>>> b01f34bca04bfb37b9739dd70278bcb063579dd1:packages/javascript/src/map/map.spec.js
+>>>>>>> e33161966fc853882117b15069a83ac8be34dfe1
 
   it("should tell me the size", () => {
     const map = new Map();
@@ -132,7 +140,11 @@ describe('map', () => {
 =======
     for (const item of map) {
       actual.push(item)
+<<<<<<< HEAD
 >>>>>>> 853834dd92ecab6e11b9e5c5b0b5e6fba8a06417:packages/javascript/src/map/map.spec.js
+=======
+>>>>>>> b01f34bca04bfb37b9739dd70278bcb063579dd1:packages/javascript/src/map/map.spec.js
+>>>>>>> e33161966fc853882117b15069a83ac8be34dfe1
     }
 
     expect(actual).toEqual([

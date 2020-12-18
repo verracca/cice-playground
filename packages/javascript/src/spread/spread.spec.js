@@ -37,7 +37,11 @@ describe('spread', () => {
     expect(given).toEqual([1, 2])
     expect(actual).toEqual([1, 2, 3])
   })
+<<<<<<< HEAD
 >>>>>>> 853834dd92ecab6e11b9e5c5b0b5e6fba8a06417
+=======
+>>>>>>> 2850556c7a8e66c60f09fad74694b53befc98165
+>>>>>>> e33161966fc853882117b15069a83ac8be34dfe1
 
   it("should spread properties in object", () => {
     const parts = {
@@ -78,7 +82,11 @@ describe('spread', () => {
     })
   })
 
+<<<<<<< HEAD
 >>>>>>> 853834dd92ecab6e11b9e5c5b0b5e6fba8a06417
+=======
+>>>>>>> 2850556c7a8e66c60f09fad74694b53befc98165
+>>>>>>> e33161966fc853882117b15069a83ac8be34dfe1
   it('should group all arguments in a function', () => {
     function foo(...args) {
       return args.map(arg => arg ** 2)
@@ -105,4 +113,8 @@ describe('spread', () => {
     expect(actual).toEqual([6, 7])
   })
 })
+<<<<<<< HEAD
 >>>>>>> 853834dd92ecab6e11b9e5c5b0b5e6fba8a06417
+=======
+>>>>>>> 2850556c7a8e66c60f09fad74694b53befc98165
+>>>>>>> e33161966fc853882117b15069a83ac8be34dfe1

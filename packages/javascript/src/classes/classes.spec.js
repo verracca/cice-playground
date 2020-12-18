@@ -52,7 +52,11 @@ class GrandChild extends ChildClass {}
 
 class NewClasses {
   static property = 'hi'
+<<<<<<< HEAD
 >>>>>>> 853834dd92ecab6e11b9e5c5b0b5e6fba8a06417
+=======
+>>>>>>> 2850556c7a8e66c60f09fad74694b53befc98165
+>>>>>>> e33161966fc853882117b15069a83ac8be34dfe1
 
   value = 42
   #privateValue = 42
@@ -72,7 +76,11 @@ class NewClasses {
   #privateMethod() {
     return 42
   }
+<<<<<<< HEAD
 >>>>>>> 853834dd92ecab6e11b9e5c5b0b5e6fba8a06417
+=======
+>>>>>>> 2850556c7a8e66c60f09fad74694b53befc98165
+>>>>>>> e33161966fc853882117b15069a83ac8be34dfe1
 }
 
 describe("Class", () => {
@@ -146,4 +154,8 @@ describe("Class", () => {
     expect(actual).toBe(42)
   })
 })
+<<<<<<< HEAD
 >>>>>>> 853834dd92ecab6e11b9e5c5b0b5e6fba8a06417
+=======
+>>>>>>> 2850556c7a8e66c60f09fad74694b53befc98165
+>>>>>>> e33161966fc853882117b15069a83ac8be34dfe1
