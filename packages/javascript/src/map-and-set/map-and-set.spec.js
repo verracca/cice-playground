@@ -7,8 +7,13 @@ describe("map", () => {
     expect(map).toEqual(new Map([["foo", "bar"]]));
   });
 
+<<<<<<< HEAD:packages/javascript/src/map-and-set/map-and-set.spec.ts
   it("should set some value and get it", () => {
     const map = new Map<string, string>();
+=======
+  it('should set some value and get it', () => {
+    const map = new Map()
+>>>>>>> f770a2b236a5772aaca186083e20c8c5614cff75:packages/javascript/src/map-and-set/map-and-set.spec.js
 
     map.set("foo", "bar");
     const actual = map.get("foo");
@@ -63,9 +68,15 @@ describe("map", () => {
     expect(bar).toBe(false);
   });
 
+<<<<<<< HEAD:packages/javascript/src/map-and-set/map-and-set.spec.ts
   it("should execute a callback for each value", () => {
     const map = new Map();
     const calls: Record<string, string>[] = [];
+=======
+  it('should execute a callback for each value', () => {
+    const map = new Map()
+    const calls = []
+>>>>>>> f770a2b236a5772aaca186083e20c8c5614cff75:packages/javascript/src/map-and-set/map-and-set.spec.js
 
     map.set("foo", "bar");
     map.set("bar", "baz");
