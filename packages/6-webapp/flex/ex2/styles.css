@@ -2,6 +2,7 @@
   display: flex;
 }
 
+<<<<<<< HEAD
 aside {
   display: flex;
   flex: 1;
@@ -9,12 +10,22 @@ aside {
 .box {
   flex: 1;
 }
+=======
+>>>>>>> 2b47dd1b5f3c931939dea2424d57e86f1ad743f2
 .content {
   display: flex;
   flex-direction: column;
   flex: 4;
 }
 
+<<<<<<< HEAD
 .main-content {
+=======
+.box {
+  flex: 1;
+}
+
+.main {
+>>>>>>> 2b47dd1b5f3c931939dea2424d57e86f1ad743f2
   flex: 4;
 }
