@@ -23,9 +23,15 @@ describe("spread", () => {
     });
   });
 
+<<<<<<< HEAD:packages/javascript/src/spread/spread.spec.ts
   it("should group all arguments in a function", () => {
     function foo(...args: number[]) {
       return args.map(arg => arg ** 2);
+=======
+  it('should group all arguments in a function', () => {
+    function foo(...args) {
+      return args.map(arg => arg ** 2)
+>>>>>>> f770a2b236a5772aaca186083e20c8c5614cff75:packages/javascript/src/spread/spread.spec.js
     }
 
     const actual = foo(1, 2, 3);

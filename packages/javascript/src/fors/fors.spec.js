@@ -1,7 +1,47 @@
+<<<<<<< HEAD
 describe("fors", () => {
   it("should iterate using for in", () => {
     const obj = { a: 1, b: 2, c: 3 };
     const actual = [];
+=======
+describe('fors', () => {
+  it('should iterate using for i', () => {
+    const array = [1, 2, 3]
+    const actual = []
+
+    for (let i = 0; i < array.length; i++) {
+      actual.push(i)
+    }
+
+    expect(actual).toEqual([1, 2, 3])
+  })
+
+  it('should iterate using for i stepping by a number', () => {
+    const array = [1, 2, 3]
+    const actual = []
+
+    for (let i = 0; i < array.length; i += 2) {
+      actual.push(array[i])
+    }
+
+    expect(actual).toEqual([1, 3])
+  })
+
+  it('should iterate backwards', () => {
+    const array = [1, 2, 3]
+    const actual = []
+
+    for (let i = array.length; i > 0; i--) {
+      actual.push(i)
+    }
+
+    expect(actual).toEqual([3, 2, 1])
+  })
+
+  it('should iterate using for in', () => {
+    const obj = { a: 1, b: 2, c: 3 }
+    const actual = []
+>>>>>>> f770a2b236a5772aaca186083e20c8c5614cff75
 
     for (const key in obj) {
       actual.push(obj[key]);
