@@ -130,13 +130,7 @@ describe("arrays", () => {
       }
     ];
 
-<<<<<<< HEAD
-    const actual = Array.from(
-      new Set(given.reduce((acc, person) => [...acc, ...person.books], []))
-    );
-=======
     const actual = Array.from(new Set(given.map(x => x.books).flat()))
->>>>>>> 853834dd92ecab6e11b9e5c5b0b5e6fba8a06417
 
     expect(actual).toEqual([
       "Dune",
@@ -215,29 +209,17 @@ describe("arrays", () => {
     const given = [
       {
         status: 409,
-<<<<<<< HEAD
-        messageName: "El nombre de usuario ya existe",
-=======
         messageName: 'Foo',
->>>>>>> 853834dd92ecab6e11b9e5c5b0b5e6fba8a06417
         ok: false
       },
       {
         status: 409,
-<<<<<<< HEAD
         messageEmail: "El email no es correcto",
-=======
-        messageEmail: 'Bar',
->>>>>>> 853834dd92ecab6e11b9e5c5b0b5e6fba8a06417
         ok: false
       },
       {
         status: 409,
-<<<<<<< HEAD
         messagePassword: "Las contraseñas no coinciden",
-=======
-        messagePassword: 'Baz',
->>>>>>> 853834dd92ecab6e11b9e5c5b0b5e6fba8a06417
         ok: false
       }
     ];
@@ -249,18 +231,9 @@ describe("arrays", () => {
     );
 
     expect(actual).toEqual({
-<<<<<<< HEAD
       messageName: "El nombre de usuario ya existe",
       messageEmail: "El email no es correcto",
       messagePassword: "Las contraseñas no coinciden"
     });
   });
 });
-=======
-      messageName: 'Foo',
-      messageEmail: 'Bar',
-      messagePassword: 'Baz'
-    })
-  })
-})
->>>>>>> 853834dd92ecab6e11b9e5c5b0b5e6fba8a06417

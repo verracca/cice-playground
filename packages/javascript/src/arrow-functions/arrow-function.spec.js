@@ -8,18 +8,10 @@ const arrowFunction = () => {
 
 const arrowFunctionWithImplicitReturn = () => 42;
 
-<<<<<<< HEAD:packages/javascript/src/arrow-functions/arrow-function.spec.ts
-const arrowFunctionWithParameters = (a: number, b: number) => a + b;
-const arrowFunctionWithSingleParameter = (a: number) => a;
-const arrowFunctionWithSingleParameterAlternative: ArrowFunction = a => a;
-
-type ArrowFunction = (a: number) => number;
-=======
 const arrowFunctionWithParameters = (a, b) => a + b
 // prettier-ignore
 const arrowFunctionWithSingleParameter = (a) => a
 const arrowFunctionWithSingleParameterAlternative = a => a
->>>>>>> f770a2b236a5772aaca186083e20c8c5614cff75:packages/javascript/src/arrow-functions/arrow-function.spec.js
 
 describe("arrow-function", () => {
   it("should execute properly", () => {
@@ -36,11 +28,6 @@ describe("arrow-function", () => {
 
     const actual = array.map(x => x ** 2);
 
-<<<<<<< HEAD:packages/javascript/src/arrow-functions/arrow-function.spec.ts
-    expect(actual).toEqual([1, 4, 9]);
-  });
-});
-=======
     expect(actual).toEqual([1, 4, 9])
   })
 
@@ -74,4 +61,3 @@ describe("arrow-function", () => {
     expect(actual).toBe(42)
   })
 })
->>>>>>> f770a2b236a5772aaca186083e20c8c5614cff75:packages/javascript/src/arrow-functions/arrow-function.spec.js
