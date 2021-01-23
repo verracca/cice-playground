@@ -1,22 +1,18 @@
-describe("reference", () => {
-  it("two objects should not be equal", () => {
-    const obj = { a: 1 };
-    const obj2 = { a: 1 };
+describe('reference', () => {
+  it('two objects should not be equal', () => {
+    const obj = { a: 1 }
+    const obj2 = { a: 1 }
 
-    expect(obj).not.toBe(obj2);
-  });
+    expect(obj).not.toBe(obj2)
+  })
 
-  it("two objects should be equal when using toEqual", () => {
-    const obj = { a: 1 };
-    const obj2 = { a: 1 };
+  it('two objects should be equal when using toEqual', () => {
+    const obj = { a: 1 }
+    const obj2 = { a: 1 }
 
-    expect(obj).toEqual(obj2);
-  });
+    expect(obj).toEqual(obj2)
+  })
 
-<<<<<<< HEAD
-  it("should return a mutated object", () => {
-    const obj = { a: 1 };
-=======
   it('should override primitive argument', () => {
     const string = 'foo'
 
@@ -32,69 +28,64 @@ describe("reference", () => {
 
   it('should return a mutated object', () => {
     const obj = { a: 1 }
->>>>>>> f770a2b236a5772aaca186083e20c8c5614cff75
 
     function foo(obj) {
-      obj.a = 2;
-      return obj;
+      obj.a = 2
+      return obj
     }
 
-    expect(foo(obj)).toEqual({ a: 2 });
-  });
+    expect(foo(obj)).toEqual({ a: 2 })
+  })
 
-  it("should mutate original object, as objects are passed as reference", () => {
-    const obj = { a: 1 };
+  it('should mutate original object, as objects are passed as reference', () => {
+    const obj = { a: 1 }
 
     function foo(object) {
-      object.a = 2;
-      return object;
+      object.a = 2
+      return object
     }
 
-    foo(obj);
+    foo(obj)
 
-    expect(obj).toEqual({ a: 2 });
-  });
+    expect(obj).toEqual({ a: 2 })
+  })
 
-  it("should mutate original array, as arrays are passed as reference", () => {
-    const array = [1];
+  it('should mutate original array, as arrays are passed as reference', () => {
+    const array = [1]
 
     function foo(newArray) {
-      newArray.push(2);
-      return newArray;
+      newArray.push(2)
+      return newArray
     }
 
-    foo(array);
+    foo(array)
 
-    expect(array).toEqual([1, 2]);
-  });
+    expect(array).toEqual([1, 2])
+  })
 
-  it("should mutate original array, as arrays are passed as reference", () => {
-    const array = [1];
+  it('should mutate original array, as arrays are passed as reference', () => {
+    const array = [1]
 
     function foo(newArray) {
-      return newArray;
+      return newArray
     }
 
-    array.push(2);
+    array.push(2)
 
-    expect(foo(array)).toBe(array);
-  });
+    expect(foo(array)).toBe(array)
+  })
 
-  it("should not mutate original array", () => {
-    const array = [1];
+  it('should not mutate original array', () => {
+    const array = [1]
 
     function foo(newArray) {
-<<<<<<< HEAD
-      return [...newArray, 2];
-=======
       const newMutatedArray = newArray.slice()
       newMutatedArray.push(2)
       return newMutatedArray
->>>>>>> f770a2b236a5772aaca186083e20c8c5614cff75
     }
 
-    array.push(2);
+    array.push(2)
 
-    expect(foo(array)).not.toBe(array);
-  });
-});
+    expect(foo(array)).not.toBe(array)
+  })
+})

@@ -1,6 +1,6 @@
 class Class {
   static hello() {
-    return "hi";
+    return 'hi'
   }
 
   constructor(value) {
@@ -8,7 +8,7 @@ class Class {
   }
 
   method() {
-    return this.value;
+    return this.value
   }
 }
 
@@ -22,101 +22,54 @@ class ChildClass extends Class {
   }
 
   method() {
-    return this.value + 1;
+    return this.value + 1
   }
 }
 
-<<<<<<< HEAD
-class NewClasses {
-  #privateValue = 42;
-  value = 42;
-
-  static property = "hi";
-=======
 class GrandChild extends ChildClass {}
 
 class NewClasses {
   static property = 'hi'
-<<<<<<< HEAD
->>>>>>> 853834dd92ecab6e11b9e5c5b0b5e6fba8a06417
-=======
->>>>>>> 2850556c7a8e66c60f09fad74694b53befc98165
->>>>>>> e33161966fc853882117b15069a83ac8be34dfe1
 
   value = 42
   #privateValue = 42
 
   getPrivateValue() {
-    return this.#privateValue;
+    return this.#privateValue
   }
 
   boundFunction = () => {
-<<<<<<< HEAD
-    return this.#privateValue;
-  };
-=======
     return this.#privateValue
   }
 
   #privateMethod() {
     return 42
   }
-<<<<<<< HEAD
->>>>>>> 853834dd92ecab6e11b9e5c5b0b5e6fba8a06417
-=======
->>>>>>> 2850556c7a8e66c60f09fad74694b53befc98165
->>>>>>> e33161966fc853882117b15069a83ac8be34dfe1
 }
 
-describe("Class", () => {
-  it("should be able to make an instance", () => {
-    const c = new Class(42);
+describe('Class', () => {
+  it('should be able to make an instance', () => {
+    const c = new Class(42)
 
-    const actual = c.method();
+    const actual = c.method()
 
-    expect(actual).toBe(42);
-  });
+    expect(actual).toBe(42)
+  })
 
-  it("should be able to handle inheritance", () => {
-    const c = new ChildClass(42);
+  it('should be able to handle inheritance', () => {
+    const c = new ChildClass(42)
 
-    const actual = c.method();
+    const actual = c.method()
 
-    expect(actual).toBe(43);
-  });
+    expect(actual).toBe(43)
+  })
 
-  it("should support static methods", () => {
-    const actual = Class.hello();
+  it('should support static methods', () => {
+    const actual = Class.hello()
 
-    expect(actual).toBe("hi");
-  });
+    expect(actual).toBe('hi')
+  })
 
-<<<<<<< HEAD
-  describe("new class proposals", () => {
-    it("should support field declarations (Stage 3)", () => {
-      const c = new NewClasses();
-
-      const actual = c.value;
-
-      expect(actual).toBe(42);
-    });
-
-    it("should support static field declarations (Stage 3)", () => {
-      const actual = NewClasses.property;
-
-      expect(actual).toBe("hi");
-    });
-
-    it("should support private fields and methods (Stage 3)", () => {
-      const c = new NewClasses();
-
-      const actual = c.getPrivateValue();
-
-      expect(actual).toBe(42);
-    });
-  });
-});
-=======
   it('should support field declarations (Stage 3)', () => {
     const c = new NewClasses()
 
@@ -139,8 +92,3 @@ describe("Class", () => {
     expect(actual).toBe(42)
   })
 })
-<<<<<<< HEAD
->>>>>>> 853834dd92ecab6e11b9e5c5b0b5e6fba8a06417
-=======
->>>>>>> 2850556c7a8e66c60f09fad74694b53befc98165
->>>>>>> e33161966fc853882117b15069a83ac8be34dfe1

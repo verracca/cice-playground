@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-describe("destructuring", () => {
-  it("should destructure keys of an object", () => {
-    const obj = { a: 1, b: 2, c: 3 };
-
-<<<<<<< HEAD:packages/javascript/src/destructuring/destructuring.spec.ts
-    function foo({ a, b }: Record<string, number>) {
-      return a + b;
-=======
-<<<<<<< HEAD
-=======
-=======
 describe('destructuring', () => {
   it('should use keys of an object', () => {
     const obj = { a: 1, b: 2, c: 3 }
@@ -25,33 +13,15 @@ describe('destructuring', () => {
 
   it('should destructure keys of an object', () => {
     const obj = { a: 1, b: 2, c: 3 }
-<<<<<<< HEAD
->>>>>>> 853834dd92ecab6e11b9e5c5b0b5e6fba8a06417
-=======
->>>>>>> 2850556c7a8e66c60f09fad74694b53befc98165
->>>>>>> e33161966fc853882117b15069a83ac8be34dfe1
->>>>>>> 9eb584ae8ca945ebbbdb53834965e7f79bbfbd77
     function foo({ a, b }) {
       return a + b
->>>>>>> f770a2b236a5772aaca186083e20c8c5614cff75:packages/javascript/src/destructuring/destructuring.spec.js
     }
 
-    const actual = foo(obj);
+    const actual = foo(obj)
 
-    expect(actual).toBe(3);
-  });
+    expect(actual).toBe(3)
+  })
 
-<<<<<<< HEAD
-  it("should destructure keys of an array", () => {
-    const array = [1, 2, 3, 4];
-
-<<<<<<< HEAD:packages/javascript/src/destructuring/destructuring.spec.ts
-    function foo([a, b, , c]: number[]) {
-      return a + b + c;
-=======
-<<<<<<< HEAD
-=======
-=======
   it('should destructure keys of an object independent of order', () => {
     const obj = { a: 1, b: 2, c: 3 }
     function foo({ b, a }) {
@@ -105,26 +75,15 @@ describe('destructuring', () => {
 
   it('should destructure keys of an array', () => {
     const array = [1, 2, 3, 4]
-<<<<<<< HEAD
->>>>>>> 853834dd92ecab6e11b9e5c5b0b5e6fba8a06417
-=======
->>>>>>> 2850556c7a8e66c60f09fad74694b53befc98165
->>>>>>> e33161966fc853882117b15069a83ac8be34dfe1
->>>>>>> 9eb584ae8ca945ebbbdb53834965e7f79bbfbd77
     function foo([a, b, , c]) {
       return a + b + c
->>>>>>> f770a2b236a5772aaca186083e20c8c5614cff75:packages/javascript/src/destructuring/destructuring.spec.js
     }
 
-    const actual = foo(array);
+    const actual = foo(array)
 
-    expect(actual).toBe(7);
-  });
+    expect(actual).toBe(7)
+  })
 
-<<<<<<< HEAD
-  it("should ignore one or more of the keys", () => {
-    const { a, ...rest } = { a: 1, b: 2, c: 3 };
-=======
   it('should get the first element of an array', () => {
     const [firstElement] = [1, 2, 3]
 
@@ -147,41 +106,27 @@ describe('destructuring', () => {
 
   it('should ignore one or more of the keys', () => {
     const { a, ...rest } = { a: 1, b: 2, c: 3 }
-<<<<<<< HEAD
->>>>>>> 853834dd92ecab6e11b9e5c5b0b5e6fba8a06417
-=======
->>>>>>> 2850556c7a8e66c60f09fad74694b53befc98165
->>>>>>> e33161966fc853882117b15069a83ac8be34dfe1
 
     expect(rest).toEqual({
       b: 2,
       c: 3
-    });
-  });
+    })
+  })
 
-<<<<<<< HEAD:packages/javascript/src/destructuring/destructuring.spec.ts
-  it("should rename to given value", () => {
-    const { a: pepe, ...rest }: Record<string, number> = { a: 1, b: 2, c: 3 };
-
-    expect(pepe).toBe(1);
-    expect(rest).toEqual({ b: 2, c: 3 });
-  });
-=======
   it('should rename to given value', () => {
     const { a: foo, ...rest } = { a: 1, b: 2, c: 3 }
 
     expect(foo).toBe(1)
     expect(rest).toEqual({ b: 2, c: 3 })
   })
->>>>>>> f770a2b236a5772aaca186083e20c8c5614cff75:packages/javascript/src/destructuring/destructuring.spec.js
 
-  it("should swap values", () => {
-    let foo = "foo";
-    let bar = "bar";
+  it('should swap values', () => {
+    let foo = 'foo'
+    let bar = 'bar'
 
-    [bar, foo] = [foo, bar];
+    ;[bar, foo] = [foo, bar]
 
-    expect(foo).toBe("bar");
-    expect(bar).toBe("foo");
-  });
-});
+    expect(foo).toBe('bar')
+    expect(bar).toBe('foo')
+  })
+})
